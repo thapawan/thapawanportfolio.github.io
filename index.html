@@ -25,22 +25,45 @@
     </div>
   </nav>
   <!--- Section 1: Home Page and Call to Action --->
-  <div style="background-color: var(--main)">
-  <div style="max-width: 1200px; margin: 0 auto !important; float: none !important;">
-  <div class="homepage">
-  <div class="homepage_container">
-    <div class="homepage_left">
-      <div class="homepage_text_cont">
-        <h1 style="opacity: 100%;">Pawan Thapa</h1>
-        <div class="homepage_text">
-          <p>Hello! Welcome to my portfolio. I am PhD Candidate, with M.S. in Geoinformatics and B.E. in Geomatics Engineering. This portfolio features my professional work and experiences of <b>GIS</b>, <b>remote sensing</b>, <b>geoscience</b> and <b>earth science</b>.</p>
-        </div>
-        <a href="portfolio.html" class="button">Recent Work</a>
-      </div>
+   <!-- Homepage Section -->
+<div style="background-color: var(--main); padding: 60px 20px;">
+  <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; gap: 40px;">
+
+    <!-- Left Text Section -->
+    <div style="flex: 1; min-width: 300px;">
+      <h1 style="font-size: 48px; font-weight: 700; color: #fff; margin-bottom: 20px;">Pawan Thapa</h1>
+      <p style="font-size: 20px; color: #f0f0f0; line-height: 1.8; margin-bottom: 30px;">
+        Hello! Welcome to my portfolio. I am a Ph.D. Candidate with an M.S. in Geoinformatics and a B.E. in Geomatics Engineering. This portfolio features my professional work and experiences in <b>GIS</b>, <b>remote sensing</b>, <b>geoscience</b>, and <b>earth science</b>.
+      </p>
+      <a href="portfolio.html" class="button" style="display:inline-block; padding:14px 28px; background:#3498db; color00px; position: relative;">
+      <div class="carousel" style="position: relative; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+        <div class="slides" style="display: flex; transition: transform 0.8s ease;">
+          <img src="./Images/Personal%20Photos/Index1.jpg" alt="Fieldwork" style="width: 100os/Picture2_1.jpg" alt="Research Presentation" style="/MAX_7400.JPG" alt="Drone Workshop" style="width: 100%; flexs -->
+      <button class="prev" style="position:absolute; top:50%; left:10px; transform:translateY(-50%); background:#fff; border:none; padding:10px; border-radius:50%; cursor:pointer;">&#10094;</button>
+      <button class="next" style="position:absolute; top:50%; right:10px; transform:translateY(-50%); background:#fff; border:none; padding:10px; border-radius:50%; cursor:pointer;">&#10095;</button>
     </div>
-    <div class="homepage_right">
-        <img src="./Images/Personal%20Photos/Index1.jpg" class="homepage_image">
-    </div>
+  </div>
+</div>
+
+<!-- JavaScript for Carousel -->
+<script>
+  const slides = document.querySelector('.slides');
+  const images = document.querySelectorAll('.slides img');
+  const prevBtn = document.querySelector('.prev');
+  const nextBtn = document.querySelector('.next');
+  let index = 0;
+
+  function showSlide(i) {
+    index = (i + images.length) % images.length;
+    slides.style.transform = `translateX(-${index * 100}%)`;
+  }
+
+  prevBtn.addEventListener('click', () => showSlide(index - 1));
+  nextBtn.addEventListener('click', () => showSlide(index + 1));
+
+  // Auto-slide every 4 seconds
+  setInterval(() => showSlide(index + 1), 4000);
+</script>
   </div>
   </div>
 </div>
@@ -330,6 +353,7 @@
   <script src="scripts/lazy-load.js"></script>
   </body>
 </html>
+
 
 
 
