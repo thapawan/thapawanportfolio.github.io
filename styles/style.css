@@ -2302,3 +2302,78 @@ img {vertical-align: middle;}
 		td:nth-of-type(7):before { content: "Advisors"; }
 		td:nth-of-type(8):before { content: "Project Page"; }
 	}
+/* --- For the footer social icons --- */
+.top_footer {
+    display: flex; /* Makes items align horizontally */
+    justify-content: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically */
+    padding: 20px 0;
+    background-color: #31333B; /* Or whatever dark background color you have */
+    color: white; /* Or your preferred text color */
+}
+
+.top_footer p {
+    margin-right: 20px; /* Space between "Contact Me" and the first icon */
+}
+
+.social-icon {
+    display: inline-flex; /* Use flexbox for centering content inside */
+    justify-content: center; /* Center the icon horizontally */
+    align-items: center; /* Center the icon vertically */
+    width: 50px; /* Size of the circular background */
+    height: 50px; /* Size of the circular background */
+    background-color: #555; /* Gray background for the circle */
+    border-radius: 50%; /* Makes it a circle */
+    color: white; /* Color of the icon itself */
+    font-size: 24px; /* Size of the icon */
+    margin: 0 10px; /* Space between icons */
+    text-decoration: none; /* Remove underline from links */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.social-icon:hover {
+    background-color: #777; /* Slightly lighter gray on hover */
+}
+
+/* Optional: To make sure the portfolio image containers display correctly */
+.portcolumn {
+    float: left; /* Make columns float next to each other */
+    width: 33.33%; /* Adjust based on how many columns you want per row */
+    padding: 10px;
+    box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+.portcontent {
+    background-color: #f2f2f2; /* Light background for the content box */
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow */
+}
+
+.portcontent img {
+    width: 100%; /* Ensure images fill their container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove extra space below image */
+    margin-bottom: 10px; /* Space between image and text */
+}
+
+/* Clear floats after the portfolio grid */
+.portfolio_cont::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 900px) {
+    .portcolumn {
+        width: 50%; /* Two columns on smaller screens */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .portcolumn {
+        width: 100%; /* Single column on very small screens */
+    }
+}
+
