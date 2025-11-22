@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
+    <!--- Navigation Bar --->
     <body>
   <nav>
     <div class="navbar" id="mynavbar">
@@ -19,13 +20,16 @@
       </a>
     </div>
   </nav>
+    <!--- Section 1: Title --->
     <div class="about_me_title">
     <div class="about_me_text">
       <h1>PORTFOLIO</h1>
     </div>
   </div>
+<!-- Portfolio Gallery Grid -->
 <div style="background-color: var(--alternative)">
   <div style="max-width: 1800px; margin: 0 auto !important; float: none !important;">
+    <!--- Section 2a: GIS Portfolio control buttons --->
     <div class="portfolio_cont">
   <div id="myBtnContainer">
     <button class="portbtn portactive" onclick="filterSelection('all')"> Show all</button>
@@ -35,10 +39,10 @@
         <button class="portbtn" onclick="filterSelection('labs')"> Labs</button>
     <button class="portbtn" onclick="filterSelection('develop')"> NASA DEVELOP</button>
   </div>
-   
+  <div class="portrow">
     <div class="portcolumn GIS remotesensing">
     <div class="portcontent">
-          <a href="https://ee-pawanthapa42.projects.earthengine.app/view/matglobal" target="GEE App" class="port_txt">   
+       <a href="https://ee-pawanthapa42.projects.earthengine.app/view/matglobal" target="" class="port_txt">   
         <img src="Images/Portfolio/Portfolio1_1.jpg" alt="Medial Axis Transform Approach" style="width:100%">
         <h3 style="font-family: 'Montserrat', sans-serif;">Innovative methods for river centerline extraction</h3>
       </a>
@@ -72,7 +76,7 @@
     </div>
   </div>
 
-  <div class="portcolumn GIS remotesensing">
+  <div class="portcolumn GIS remotesensing labs">
     <div class="portcontent"> 
       <a href="https://github.com/thapawan/Flood-Dynamics-Social-Vulnerability-and-the-Floodplain" target="" class="port_txt">
         <img src="Images/Portfolio/Portfolio8_1.jpg" alt="Flood Dynamics" style="width:100%">
@@ -139,4 +143,5 @@
   <script src="scripts/icon.js"></script>
   </body>
 </html>
+
 
