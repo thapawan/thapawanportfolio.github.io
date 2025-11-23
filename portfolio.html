@@ -1,147 +1,165 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Pawan Thapa| Portfolio</title>
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  </head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pawan Thapa | Portfolio</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
     <!--- Navigation Bar --->
- <body>
-  <nav>
-    <div class="navbar" id="mynavbar">
-      <a href="index.html">HOME</a>
-      <a href="about.html">ABOUT ME</a>
-      <a href="resume.html">RESUME</a>
-      <a href="portfolio.html" class="active">PORTFOLIO</a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a>
-    </div>
-  </nav>
-    <!--- Section 1: Title --->
-    <div class="about_me_title">
-    <div class="about_me_text">
-      <h1>PORTFOLIO</h1>
-    </div>
-  </div>
+<body>
+  <nav>
+    <div class="navbar" id="mynavbar">
+      <a href="index.html">HOME</a>
+      <a href="about.html">ABOUT ME</a>
+      <a href="resume.html">RESUME</a>
+      <a href="portfolio.html" class="active">PORTFOLIO</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </nav>
+  <!--- Section 1: Title --->
+  <div class="about_me_title">
+    <div class="about_me_text">
+      <h1>PORTFOLIO</h1>
+    </div>
+  </div>
 <!-- Portfolio Gallery Grid -->
 <div style="background-color: var(--alternative)">
-  <div style="max-width: 1800px; margin: 0 auto !important; float: none !important;">
-    <!--- Section 2a: GIS Portfolio control buttons --->
-  <div class="portfolio_cont">
-  <div id="myBtnContainer">
-    <button class="portbtn portactive" onclick="filterSelection('all')"> Show all</button>
-    <button class="portbtn" onclick="filterSelection('GIS')"> GIS</button>
-    <button class="portbtn" onclick="filterSelection('remotesensing')"> Remote Sensing</button>
-    <button class="portbtn" onclick="filterSelection('webmaps')"> Web Mapping</button>
-        <button class="portbtn" onclick="filterSelection('labs')"> Labs</button>
-    <button class="portbtn" onclick="filterSelection('develop')"> NASA DEVELOP</button>
-  </div>
-  <div class="portrow">
-    <div class="portcolumn GIS remotesensing develop">
-    <div class="portcontent">
-      <a href="https://pawanthapa42.users.earthengine.app/view/fire" target="" class="port_txt">
-        <img src="Images/Portfolio/Portfolio9_1.jpg" alt="Forest Fire" style="width:100%">
-        <h3 style="font-family: 'Montserrat', sans-serif;">Estimated forest fire</h3>
-      </a>
-    </div>
-  </div>
-   <div class="portcolumn GIS remotesensing">
-     <div class="portcontent">
-       <a href="https://ee-pawanthapa42.projects.earthengine.app/view/matglobal" target="" class="port_txt">   
-        <img src="Images/Portfolio/Portfolio1_1.jpg" alt="Medial Axis Transform Approach" style="width:100%">
-        <h3 style="font-family: 'Montserrat', sans-serif;">Innovative methods for river centerline extraction</h3>
-      </a>
-    </div>
-  </div>
+  <div style="max-width: 1800px; margin: 0 auto !important; float: none !important;">
+  <!--- Section 2a: GIS Portfolio control buttons --->
+  <div class="portfolio_cont">
+  <div id="myBtnContainer">
+    <button class="portbtn portactive" onclick="filterSelection('all')"> Show all</button>
+    <button class="portbtn" onclick="filterSelection('GIS')"> GIS</button>
+    <button class="portbtn" onclick="filterSelection('remotesensing')"> Remote Sensing</button>
+    <button class="portbtn" onclick="filterSelection('webmaps')"> Web Mapping</button>
+        <button class="portbtn" onclick="filterSelection('labs')"> Labs</button>
+    <button class="portbtn" onclick="filterSelection('develop')"> NASA DEVELOP</button>
+  </div>
+<div class="portrow">
   <div class="portcolumn GIS remotesensing develop">
-    <div class="portcontent">
-      <a href="https://pawanthapa42.users.earthengine.app/view/flood-morang" target="" class="port_txt">
-          <img src="Images/Portfolio/Portfolio6_1.jpg" alt="Flood Extent" style="width:100%">
-        <h3 style="font-family: 'Montserrat', sans-serif;">Information systems for flood and its impacts</h3>
-      </a>
-    </div>
-  </div>
-  <div class="portcolumn GIS remotesensing labs">
-    <div class="portcontent">
-      <a href="https://github.com/thapawan/CrossSectionsExtractionVisualization" target="" class="port_txt">
-        <img src="Images/Portfolio/Portfolio5_1.jpg" alt="Crosssections Extraction and Visualization" style="width:100%">
-        <h3 style="font-family: 'Montserrat', sans-serif;">Python package for ArcGIS Pro for Crosssections Extraction and Visualization</h3>
-      </a>
-    </div>
-  </div>
+    <div class="portcontent">
+      <a href="https://pawanthapa42.users.earthengine.app/view/fire" target="" class="port_txt">
+        <img src="Images/Portfolio/Portfolio9_1.jpg" alt="Forest Fires" style="width:100%">
+        <h3 style="font-family: 'Montserrat', sans-serif;">Estimated forest fire</h3>
+        <h4>Image Credit: NASA DEVELOP & GEE</h4>
+      </a>
+    </div>
+  </div>
   <div class="portcolumn GIS remotesensing">
-    <div class="portcontent">
-      <a href="https://www.youtube.com/watch?v=0p7sM_w6-Aw" target="" class="port_txt">
-        <img src="Images/Portfolio/Portfolio13.jpg" alt="Fundametal of Suverying" style="width:100%">
-        <h3 style="font-family: 'Montserrat', sans-serif;">Definition, purpose, and necessity of Survey and surveying</h3>
-      </a>
-    </div>
-  </div>
-  <div class="portcolumn webmaps">
-    <div class="portcontent">
-      <a href="https://www.arcgis.com/apps/instant/countdown/index.html?appid=9c8ccdb27dcb4d409ee8440e97c3d82c" target="" class="port_txt"> 
-        <img src="Images/Portfolio/Portfolio2_2.jpg" alt="Disaster Map" style="width:100%">
-        <h3 style="font-family: 'Montserrat', sans-serif;">Visualize different disasters in web map and application</h3>
-      </a>
-    </div>
-  </div>
-
-  <div class="portcolumn webmaps">
-    <div class="portcontent">
-      <a href="https://www.researchgate.net/publication/344296913_A_Story_Map_of_Landslides_in_Sindhupalanchok" target="" class="port_txt">
-         <img src="Images/Portfolio/Portfolio3_3.jpg" alt="StoryMap" style="width:100%">
-        <h3 style="font-family: 'Montserrat', sans-serif;">Natural disasters such as landslides, floods, and earthquakes</h3>
-      </a>
-    </div>
-  </div>
-  <div class="portcolumn webmaps">
-    <div class="portcontent">
-      <a href="https://github.com/thapawan/IntegratedInformationSystem" target="" class="port_txt">
-        <img src="Images/Portfolio/Portfolio4_1.jpg" alt="Integrated Information System" style="width:100%">
-       <h3 style="font-family: 'Montserrat', sans-serif;">Mobile and web application and maps for land cover and climate change</h3>
-      </a>
-    </div>
-  </div>
-   <div class="portcolumn webmaps">
-    <div class="portcontent">
-      <a href="https://www.academia.edu/video/kPvXK1" target="" class="port_txt">
-        <img src="Images/Portfolio/Portfolio11.jpg" alt="Public Displays in Location-Based Service" style="width:100%">
-       <h3 style="font-family: 'Montserrat', sans-serif;">A Review on Use of Public Displays in Location-Based Service Earth Science and Engineeringe</h3>
-      </a>
-    </div>
-  </div>
-      <div class="portcolumn GIS">
-    <div class="portcontent">
-      <a href="https://www.youtube.com/@learnsomethingtoday3318" target="" class="port_txt">
-        <img src="Images/Portfolio/Portfolio14.jpg" alt="Keep learning something today" style="width:100%">
-       <h3 style="font-family: 'Montserrat', sans-serif;">You can learn anything anywhere, and anytime</h3>
-      </a>
-    </div>
-  </div>
-    <div class="portcolumn GIS webmaps">
-    <div class="portcontent"> 
-      <a href="https://github.com/thapawan/Flood-Dynamics-Social-Vulnerability-and-the-Floodplain" target="" class="port_txt">
-        <img src="Images/Portfolio/Portfolio7.jpg" alt="Flood Dynamics" style="width:100%">
-        <h3 style="font-family: 'Montserrat', sans-serif;">Modeling and mapping flood inundation, risks and social vulnerability</h3>
-      </a>
-    </div>
-  </div>
-  <div class="portcolumn GIS">
-    <div class="portcontent"> 
-      <a href="https://www.academia.edu/video/lv7MXk" target="" class="port_txt">
-        <img src="Images/Portfolio/Portfolio12.jpg" alt="Three Minute Thesis (3MT) Presentation" style="width:100%">
-        <h3 style="font-family: 'Montserrat', sans-serif;">Participation Three Minute Thesis (3MT) Competition IGARSS 2020.</h3>
-      </a>
-    </div>
-  </div>
-   <div class="portcolumn GIS">
+    <div class="portcontent">
+      <a href="https://ee-pawanthapa42.projects.earthengine.app/view/matglobal" target="" class="port_txt">
+        <img src="Images/Portfolio/Portfolio1_1.jpg" alt="Medial Axis Transform Approach" style="width:100%">
+        <h3 style="font-family: 'Montserrat', sans-serif;">Innovative methods for river centerline extraction</h3>
+      </a>
+    </div>
+  </div>
+  <div class="portcolumn GIS remotesensing develop">
+    <div class="portcontent">
+      <a href="https://pawanthapa42.users.earthengine.app/view/flood-morang" target="" class="port_txt">
+        <img src="Images/Portfolio/Portfolio6_1.jpg" alt="Flood Extent" style="width:100%">
+        <h3 style="font-family: 'Montserrat', sans-serif;">Information systems for flood and its impacts</h3>
+        <h4>Image Credit: NASA DEVELOP</h4>
+      </a>
+    </div>
+  </div>
+  <div class="portcolumn GIS remotesensing develop">
+    <div class="portcontent">
+      <a href="https://skilful-boulder-440618-e7.projects.earthengine.app/view/evaporation-and-transpiration" target="" class="port_txt">
+        <img src="Images/Portfolio/Portfolio15.jpg" class alt="NASA ASU Project" style="width:100%">
+        <h3 style="font-family: 'Montserrat', sans-serif;">NASA ASU Virtual Tour evaporation and transpiration application</h3>
+        <h4>Image Credit: NASA ASU</h4>
+      </a>
+    </div>
+  </div>
+  <div class="portcolumn GIS remotesensing labs">
+    <div class="portcontent">
+      <a href="https://github.com/thapawan/CrossSectionsExtractionVisualization" target="" class="port_txt">
+      <img rc="Images/Portfolio/Portfolio5_1.jpg" alt="Crosssections Extraction and Visualization style="width:100%">
+      <h3 style="font-family: 'Montserrat', sans-serif;">Python package for ArcGIS Pro for Crosssections Extraction and Visualization</h3>
+      </a>
+    </div>
+  </div>
+  <div class="portcolumn GIS remotesensing">
     <div class="portcontent">
       <a href="https://pawanthapa42.users.earthengine.app/view/edc" target="" class="port_txt">
       <img src="Images/Portfolio/Portfolio10.jpg" alt="Web Map and App" style="width:100%">
       <h3 style="font-family: 'Montserrat', sans-serif;">Erosion and Deposition</h3>
+      </a>
+    </div>
+  </div>
+  <div class="portcolumn webmaps">
+    <div class="portcontent">
+      <a href="https://www.arcgis.com/apps/instant/countdown/index.html?appid=9c8ccdb27dcb4d409ee8440e97c3d82c" target="" class="port_txt">
+      <img src="Images/Portfolio/Portfolio2_2.jpg" alt="Disaster Map" style="width:100%">
+      <h3 style="font-family: 'Montserrat', sans-serif;">Visualize different disasters in web map and application</h3>
+      </a>
+    </div>
+  </div>
+  <div class="portcolumn webmaps">
+    <div class="portcontent">
+      <a href="https://www.researchgate.net/publication/344296913_A_Story_Map_of_Landslides_in_Sindhupalanchok" target="" class="port_txt">
+      <img src="Images/Portfolio/Portfolio3_3.jpg" alt="StoryMap" style="width:100%">
+      <h3 style="font-family: 'Montserrat', sans-serif;">Natural disasters such as landslides, floods, and earthquakes</h3>
+      </a>
+    </div>
+  </div>
+  <div class="portcolumn webmaps">
+    <div class="portcontent">
+      <a href="https://github.com/thapawan/IntegratedInformationSystem" target="" class="port_txt">
+      <img src="Images/Portfolio/Portfolio4_1.jpg" alt="Integrated Information System" style="width:100%">
+      <h3 style="font-family: 'Montserrat', sans-serif;">Mobile and web application and maps for land cover and climate change</h3>
+      </a>
+    </div>
+  </div>
+  <div class="portcolumn webmaps">
+    <div class="portcontent">
+      <a href="https://github.com/thapawan/Flood-Dynamics-Social-Vulnerability-and-the-Floodplain" target="" class="port_txt">
+      <img src="Images/Portfolio/Portfolio7.jpg" alt="Flood Dynamics" style="width:100%">
+      <h3 style="font-family: 'Montserrat', sans-serif;">Modeling and mapping flood inundation, risks and social vulnerability</h3>
+      </a>
+    </div>
+  </div>
+  <div class="portcolumn GIS">
+    <div class="portcontent">
+      <a href="https://www.youtube.com/watch?v=0p7sM_w6-Aw" target="" class="port_txt">
+      <img src="Images/Portfolio/Portfolio13.jpg" alt="Fundametal of Suverying" style="width:100%">
+      <h3 style="font-family: 'Montserrat', sans-serif;">Definition, purpose, and necessity of Survey and surveyings</h3>
+      </a>
+    </div>
+  </div>
+  <div class="portcolumn GIS webmaps">
+    <div class="portcontent">
+      <a href="https://www.academia.edu/video/lv7MXk" target="" class="port_txt">
+      <img src="Images/Portfolio/Portfolio12.jpg" alt="Three Minute Thesis (3MT) Presentation" style="width:100%">
+      <h3 style="font-family: 'Montserrat', sans-serif;">Participation Three Minute Thesis (3MT) Competition IGARSS 2020</h3>
+      </a>
+    </div>
+  </div>
+  <div class="portcolumn GIS">
+    <div class="portcontent">
+      <a href="https://www.researchgate.net/publication/359684510_Training_of_Management_of_Technology_Technology_Development" target="" class="port_txt">
+      <img src="Images/Portfolio/Portfolio16.jpg" alt="Training of Technology " style="width:100%">
+      <h3 style="font-family: 'Montserrat', sans-serif;">Integrated Rural Development Project/ Nepal Technology Innovation Center(IRDP/ NTIC),KU</h3>
+      </a>
+    </div>
+  </div>
+  <div class="portcolumn GIS">
+    <div class="portcontent">
+      <a href="https://www.academia.edu/video/kPvXK1" target="" class="port_txt">
+      <img src="Images/Portfolio/Portfolio11.jpg" alt="Public Displays in Location-Based Service" style="width:100%">
+      <h3 style="font-family: 'Montserrat', sans-serif;">A Review on Use of Public Displays in Location-Based Service Earth Science and Engineering</h3>
+      </a>
+    </div>
+  </div>
+  <div class="portcolumn GIS labs">
+    <div class="portcontent">
+      <a href="phttps://www.youtube.com/@learnsomethingtoday3318" target="" class="port_txt">
+      <img src="Images/Portfolio/Portfolio14.jpg" alt="Keep learning something today" style="width:100%">
+      <h3 style="font-family: 'Montserrat', sans-serif;">You can learn anything anywhere, and anytime</h3>
       </a>
     </div>
   </div>
@@ -150,36 +168,30 @@
 </div>
 </div>
 </div>
-<!--- Section 3: Contact Information --->
-<div class="about_me_interests_cont_pg2">
-    <div class="about_me_interests_pg2">
-      <br>
-      <h2 style="font-family: 'Montserrat', sans-serif;">Contact</h2>
-      <br>
-      <p>Please feel free to contact me at my email address or through my LinkedIn Account below.</p>
-      <br>
-      <h2 style="font-family: 'Montserrat', sans-serif;">Email</h2>
-      <br>
-      <p>pawanthapa42@gmail.com</p>
-      <br>
-    </div>
-  </div>
-    <!--- Footer --->
-    <div class="top_footer">
-    <p style="font-size: 24px; font-family: 'Montserrat', sans-serif;">Contact Me</p>
-    <a href="https://www.linkedin.com/in/pawan-thapa-916aa360/" class="social-icon"><i class="fa fa-linkedin"></i></a>
-   
-    <a href="https://thapawan.github.io/" class="social-icon"><i class="fa fa-github"></i></a>
-  </div>
-  <div class="bottom_footer">
-    <p><small>&copy; Copyright 2025, Pawan Thapa</small></p>
-  </div>
-  <script src="scripts/filter.js"></script>
-  <script src="scripts/icon.js"></script>
-  </body>
+  <!--- Section 3: Contact Information --->
+  <div class="about_me_interests_cont_pg2">
+    <div class="about_me_interests_pg2">
+      <br>
+      <h2 style="font-family: 'Montserrat', sans-serif;">Contact</h2>
+      <br>
+      <p>Please feel free to contact me at my email address or through my LinkedIn Account below.</p>
+      <br>
+      <h2 style="font-family: 'Montserrat', sans-serif;">Email</h2>
+      <br>
+      <p>cawilliams719@gmail.com</p>
+      <br>
+    </div>
+  </div>
+  <!--- Footer --->
+  <div class="top_footer">
+    <p style="font-size: 24px; font-family: 'Montserrat', sans-serif;">Contact Me</p>
+    <a href="https://www.linkedin.com/in/caroline-ann-williams/"><i class="fa fa-linkedin"></i></a>
+    <a href="https://github.com/cawilliams719"><i class="fa fa-github"></i></a>
+  </div>
+  <div class="bottom_footer">
+    <p><small>&copy; Copyright 2023, Caroline Williams</small></p>
+  </div>
+  <script src="scripts/filter.js"></script>
+  <script src="scripts/icon.js"></script>
+  </body>
 </html>
-
-
-
-
-
